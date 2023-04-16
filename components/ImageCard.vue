@@ -43,7 +43,7 @@ export default {
 </script>
 
 <template>
-    <SectionCard :id="objectId" class="relative group" @click="cardClick">
+    <SectionCard :id="objectId" class="relative group" @click="cardClick" style="flex: 1">
         <img v-if="hasImage" :src="bgImage" alt="" class="object-cover w-full h-full"
             :style="{ 'object-position': `right ${imageOffset}% top 50%` }" >
         <div class="ease-in-out duration-300 transition-all

@@ -285,66 +285,53 @@ export default {
             </CardWrap>
         </SectionScroll>
         <SectionScroll>
-            <CardWrap class="flex flex-col">
-                <div class="flex-initial h-[120px] mb-5">
-                    <SectionCard class="pl-10" :style="{ transform: `translateY(${group1TitleTransform}px)` }">
-                        <div class="text-[60px]">
-                            My Projects
-                        </div>
-                    </SectionCard>
-                </div>
-                <div class="flex flex-row flex-1">
-                    <div class="mr-5 w-full h-full">
-                        <ImageCard :image-offset="group1ImageOffset" 
-                        object-id="group1Card1" 
-                        bg-image="/img/QuadDemo.png"  
-                        :style="{ transform: `translateY(${group1Card1Transform}px)` }">
+            <CardWrap>
+                <VerticalAlign>
+                    <div class="flex-none h-[120px]">
+                        <SectionCard class="pl-10" :style="{ transform: `translateY(${group1TitleTransform}px)` }">
+                            <div class="text-[60px]">
+                                My Projects
+                            </div>
+                        </SectionCard>
+                    </div>
+                    <HorizontalAlign>
+                        <ImageCard :image-offset="group1ImageOffset" object-id="group1Card1" bg-image="/img/QuadDemo.png"
+                            :style="{ transform: `translateY(${group1Card1Transform}px)` }">
                             Quadrilateral Meshing
                         </ImageCard>
-                    </div>
-                    <div class="mr-5 ml-5 w-full h-full">
-                        <ImageCard :image-offset="group1ImageOffset" 
-                        object-id="group1Card2" 
-                        bg-image="/img/Broadcast.png"  
-                        :style="{ transform: `translateY(${group1Card2Transform}px)` }">
+                        <ImageCard :image-offset="group1ImageOffset" object-id="group1Card2" bg-image="/img/Broadcast.png"
+                            :style="{ transform: `translateY(${group1Card2Transform}px)` }">
                             Campus Broadcast Platform
                         </ImageCard>
-                    </div>
-                    <div class="ml-5 w-full h-full">
-                        <ImageCard :image-offset="group1ImageOffset" 
-                        object-id="group1Card3" 
-                        bg-image="/img/English.svg"  
-                        :style="{ transform: `translateY(${group1Card3Transform}px)` }">
+                        <ImageCard :image-offset="group1ImageOffset" object-id="group1Card3" bg-image="/img/English.svg"
+                            :style="{ transform: `translateY(${group1Card3Transform}px)` }">
                             English Learning
                         </ImageCard>
-                    </div>
-                </div>
+                    </HorizontalAlign>
+                </VerticalAlign>
             </CardWrap>
         </SectionScroll>
         <SectionScroll>
-            <CardWrap class="flex flex-col">
-                <div class="flex-1 max-h-[120px] mb-5">
-                    <SectionCard class="pl-10">
-                        <div class="text-[60px]">
-                            My Education
-                        </div>
-                    </SectionCard>
-                </div>
-                <div class="flex flex-row flex-1">
-                    <div class="mr-5 w-full h-full">
-                        <ImageCard object-id="group2Card1" bg-image="/img/DLUTLogo.svg">
+            <CardWrap>
+                <VerticalAlign>
+                    <div class="flex-none h-[120px]">
+                        <SectionCard class="pl-10">
+                            <div class="text-[60px]">
+                                Education
+                            </div>
+                        </SectionCard>
+                    </div>
+                    <HorizontalAlign>
+                        <ImageCard object-id="group1Card1" class="min-h-0" bg-image="/img/DLUTLogo.svg">
                             Dalian University of Technology
                         </ImageCard>
-                    </div>
-                    <div class="ml-5 w-full h-full">
-                        <ImageCard object-id="group2Card2" bg-image="/img/UPENN.svg">
+                        <ImageCard object-id="group1Card2" bg-image="/img/UPENN.svg">
                             University of Pennsylvania
                         </ImageCard>
-                    </div>
-                </div>
+                    </HorizontalAlign>
+                </VerticalAlign>
             </CardWrap>
         </SectionScroll>
-        
     </PageBlock>
 </template>
 
