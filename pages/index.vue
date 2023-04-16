@@ -322,10 +322,10 @@ export default {
                         </SectionCard>
                     </div>
                     <HorizontalAlign>
-                        <ImageCard object-id="group1Card1" class="min-h-0" bg-image="/img/DLUTLogo.svg">
+                        <ImageCard object-id="group2Card1" bg-image="/img/DLUTLogo.svg">
                             Dalian University of Technology
                         </ImageCard>
-                        <ImageCard object-id="group1Card2" bg-image="/img/UPENN.svg">
+                        <ImageCard object-id="group2Card2" bg-image="/img/UPENN.svg">
                             University of Pennsylvania
                         </ImageCard>
                     </HorizontalAlign>
